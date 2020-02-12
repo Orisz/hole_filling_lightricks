@@ -35,7 +35,8 @@ set(gcf,'name','Image Analysis Demo','numbertitle','off')
 %----- Burn ellipse into image -----
 % Create elliptical mask, h, as an ROI object over the second image.
 subplot(2, 4, 2);
-hEllipse = imellipse(gca,[150 150 100 150]); % Second argument defines ellipse shape and position.
+%hEllipse = imellipse(gca,[250 160 20 100]);
+hEllipse = imellipse(gca,[170 360 20 70]); % Second argument defines ellipse shape and position.
 % Create a binary image ("mask") from the ROI object.
 binaryImage = hEllipse.createMask();
 % Display the ellipse mask.
